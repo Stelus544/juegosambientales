@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECOGAMES – Juega por el planeta</title>
+<meta name="description" content="Videojuegos gratis con temática ambiental. Juega directo en tu navegador.">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#">ECO<span>GAMES</span></a>
+  <input id="q" type="search" placeholder="Buscar juegos..." aria-label="Buscar juegos" autocomplete="off">
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Juega. Aprende. Cuida el planeta.</h1>
+    <p>Videojuegos gratis que se juegan al instante, sin descargas.</p>
+    <button id="heroPlay" class="btn">Jugar Salva el Bosque</button>
+  </section>
+
+  <nav id="cats" class="cats" aria-label="Categorías"></nav>
+  <h2 id="title">Todos los juegos</h2>
+  <section id="grid" class="grid" aria-live="polite"></section>
+  <p id="empty" class="empty" hidden>No encontramos juegos con esa búsqueda. Prueba otra palabra o categoría.</p>
+</main>
+
+<footer>© 2026 ECOGAMES · Hecho con energía verde</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+    <div class="bar">
+      <strong id="mtitle"></strong>
+      <span>
+        <button id="mreset" class="btn small">Reiniciar</button>
+        <button id="mclose" class="btn small">Cerrar</button>
+      </span>
+    </div>
+    <p id="mdesc" class="mdesc"></p>
+    <div id="stage" class="stage"></div>
+  </div>
+</div>
+
+<script src="js/games.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
